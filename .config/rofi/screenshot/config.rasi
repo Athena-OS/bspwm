@@ -13,9 +13,8 @@
 window {
   transparency:	"real";
   width:		  100px;
-  height:		  260px;
+  height:		  235px;
   location: east;
-  x-offset: -10px;
 }
 
 mainbox { children: [ listview ]; }
@@ -24,11 +23,10 @@ listview {
     cycle:      true;
     dynamic:    true;
     layout:     vertical;
-    padding:    10px;
 }
 
 element {
-  padding:		0px 0px 0px 0px;
+  padding:		0px 0px 0px 20px;
   border-radius:	8px;
 }
 

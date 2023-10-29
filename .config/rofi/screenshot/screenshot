@@ -9,7 +9,7 @@
 #### Configurations
 
 # Save Screenshots here
-screenshotdir=~/media/Pictures/Screenshots
+screenshotdir=~/Pictures/Screenshots
 # file name
 file=$screenshotdir/$(date '+%y%m%d-%H%M-%S').png
 # icon for notification
