@@ -49,9 +49,9 @@
 		 :spacing -15
 
   	(button :class "launcher_icon"
-			:halign "left"
-		   	:style "background-image: url('images/icons/system/2.png');"
-		   	:onclick "OpenApps --menu"
+			:halign "baseline"
+		   	:style "background-image: url('images/icons/system/athenaos-blue-crest.svg'); background-repeat: no-repeat; background-position: center; background-size: cover;"
+		   	:onclick "cd ~ && OpenApps --menu"
 		   	:onrightclick "RiceSelector & disown")))
 
 
@@ -69,7 +69,7 @@
 
 	(button		:class "trayicon"
 				:tooltip "${HBTIP}"
-				:style "background-image: url('${HTBCON}');"
+				:style "background-image: url('${HTBCON}'); background-repeat: no-repeat; background-position: center; background-size: cover;"
 				:onclick "OpenApps --htb_vpn & disown & disown"
 				:onmiddleclick "OpenApps --htb_details & disown"
 				:onrightclick "OpenApps --htb_spawn & disown")))
@@ -78,7 +78,7 @@
 ;; Bluetooth Widget
 (defwidget bluetooth []
 	(box		:orientation "v"
-	(button		:style "background-image: url('${BTICON}');"
+	(button		:style "background-image: url('${BTICON}'); background-repeat: no-repeat; background-position: center; background-size: cover;"
 				:class "trayicon"
 				:tooltip "${BTSTAT}"
 				:onclick "OpenApps --bluetooth_menu & disown" )))
@@ -88,7 +88,7 @@
 ;; Wifi Widgets ;;
 (defwidget wifi []
 	(box		:orientation "v"  			
-	(button		:style "background-image: url('${WIFIICON}');"
+	(button		:style "background-image: url('${WIFIICON}'); background-repeat: no-repeat; background-position: center; background-size: cover;"
 				:class "trayicon"
 				:tooltip "${NETSTAT}"
 				:onclick "$HOME/.config/rofi/wifi/wifi & disown" )))
@@ -108,12 +108,12 @@
 	(box		:orientation "v"					
 				:space-evenly "false"
 				
-	(button		:style "background-image: url('images/icons/system/owl.png');"
+	(button		:style "background-image: url('images/icons/system/owl.png'); background-repeat: no-repeat; background-position: center; background-size: cover;"
 				:class "trayicon" 									
 				:tooltip "Athena Welcome"
 				:onclick "OpenApps --athena-welcome & disown")))
 
-	(button		:style "background-image: url('images/icons/system/infowidgets.png');"
+	(button		:style "background-image: url('images/icons/system/infowidgets.png'); background-repeat: no-repeat; background-position: center; background-size: cover;"
 				:class "trayicon" 									
 				:tooltip "Info Center"		 
 				:onclick "scripts/popup --infocenter"))))
@@ -138,7 +138,7 @@
 	(label  	:class "bar-updates-text" 
 				:text {UPDATES})))
 
-	(button		:style "background-image: url('images/icons/system/pac_man.png');"
+	(button		:style "background-image: url('images/icons/system/pac_man.png'); background-repeat: no-repeat; background-position: center; background-size: cover;"
 				:class "trayicon" 									
 				:tooltip "Updates ${UPDATES}"
 				:onrightclick "OpenApps --checkupdates"		 
@@ -163,7 +163,7 @@
 			  :tooltip "Volume: ${volumen}%" 
 			  :max 101 
 			  :min 0))
-	(button   :style "background-image: url('${volume_icon}');"
+	(button   :style "background-image: url('${volume_icon}'); background-repeat: no-repeat; background-position: center; background-size: cover;"
 			  :class "trayicon"
 			  :onrightclick "OpenApps --soundcontrol"
 			  :onclick "scripts/volume --toggle-muted"))))
