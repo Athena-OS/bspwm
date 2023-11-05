@@ -41,10 +41,10 @@ ctrl + super + alt + {p,r,q,l,k}
 	{systemctl poweroff, systemctl reboot,bspc quit,lockscreen -d,xkill}
 
 # Apps
-shift + alt + {b,g,n,p,r,t,w,m,v,k}
-	{firefox, \
+shift + alt + {b,g,e,p,r,t,w,m,v,k}
+	{OpenApps --browser, \
 	 vscodium, \
-	 thunar, \
+	 OpenApps --filemanager, \
 	 pavucontrol, \
 	 OpenApps --ranger, \
 	 telegram-desktop, \
