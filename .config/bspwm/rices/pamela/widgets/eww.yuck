@@ -87,7 +87,7 @@
           (box :style "background-image: url('${IMAGEP}');" 
 		  :class "face" 
 		  :halign "center")
-          (label :text "Firme y Digno!"
+          (label :text "Enjoy!"
                  :class "launcher-pfp-label")
           (label :text "${time0} - ${date}"
                  :class "launcher-pfp-label2")
@@ -98,7 +98,7 @@
                        :tooltip "Browser"
                        "󰇧")
                (button :class "launcher-btn"
-                       :onclick "OpenApps --fetch"
+                       :onclick "cd ~ && OpenApps --fetch"
                        :tooltip "System Fetch"
                        "󰚌")
                (button :class "launcher-btn"
@@ -106,7 +106,7 @@
                        :tooltip "File Manager"
                        "󰝰")
                (button :class "launcher-btn"
-                       :onclick "OpenApps --terminal"
+                       :onclick "cd ~ && OpenApps --terminal"
                        :tooltip "Terminal"
                        "󰆍")
                (button :class "launcher-btn"

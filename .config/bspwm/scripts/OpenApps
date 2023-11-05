@@ -86,7 +86,7 @@ case "$1" in
 	thunar;;
 
   --browser)
-	firefox;;
+	firefox-esr || brave || mullvad-browser;;
 
   --editor)
 	vscodium;;
